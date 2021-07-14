@@ -6,5 +6,5 @@ import { evaluateRadarHandler } from "./controllers/radar.controller";
 export default function (app: Express) {
   app.get("/healthcheck", (req: Request, res: Response) => res.sendStatus(200));
 
-  app.post("/api/radar", validateRequest(evaluateRadarSchema), evaluateRadarHandler);
+  app.post("/radar", validateRequest(evaluateRadarSchema), evaluateRadarHandler);
 }

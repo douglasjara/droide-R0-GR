@@ -3,20 +3,16 @@ interface Enemies {
     number: number;
 }
 
-interface Allies {
-    type: string;
-    number: number;
-}
-
 interface Coordinates {
     x: number;
     y: number;
+    distance: number;
 }
 
 interface Scan {
     coordinates: Coordinates;
     enemies: Enemies;
-    allies: Allies;
+    allies: number;
 }
 
 export interface Radar {
